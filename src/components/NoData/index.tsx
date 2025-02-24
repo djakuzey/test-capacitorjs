@@ -1,4 +1,5 @@
 import NoActivityIcon from '../../assets/svg/no-activity.svg?react';
+import NoLoansIcon from '../../assets/svg/no-loans.svg?react';
 
 import styles from './no-data.module.scss';
 import React from 'react';
@@ -7,7 +8,7 @@ interface NoDataProps {
   type: 'activity' | 'loan' | 'payment'
   title: string
   message: string
-  children: React.ReactNode
+  children?: React.ReactNode
 }
 
 const NoData = ({
@@ -22,7 +23,7 @@ const NoData = ({
       case 'activity':
         return <NoActivityIcon/>;
       case 'loan':
-        return 'loan';
+        return <NoLoansIcon/>;
       case 'payment':
         return 'payment';
     }
