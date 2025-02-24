@@ -1,0 +1,111 @@
+.activityWidget {
+  background: var(--white-background);
+  border-radius: 16px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+  min-width: 331px;
+
+  .badge {
+    box-sizing: border-box;
+    height: 24px;
+    padding: 0 8px;
+    font-weight: 600;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    border-radius: 12px;
+    width: min-content;
+    align-items: center;
+
+    &.loan {
+      color: #71BE6F;
+      background: #D0EDE880;
+    }
+
+    &.debt {
+      color: #F19037;
+      background: #FBDFC680;
+    }
+
+    svg {
+      margin-right: 4px;
+    }
+  }
+
+  .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .terms {
+      border: 1px solid #F0F0F0;
+      display: flex;
+      padding: 8px;
+      box-sizing: border-box;
+      height: 80px;
+      border-radius: 12px;
+
+      .termsImage {
+        width: 64px;
+        height: 64px;
+        border-radius: 8px;
+        object-fit: cover;
+        margin-right: 12px;
+      }
+
+      .termsBody {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+        gap: 4px;
+
+        .title {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: 24px;
+        }
+
+        .subtitle {
+          font-size: 14px;
+          line-height: 21px;
+          color: var(--text-gray);
+          display: flex;
+          align-items: center;
+
+          .divider {
+            width: 1px;
+            height: 10px;
+            background: #D9D7DF;
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+
+    .offers {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #F0EEF4;
+      color: #462D7A;
+      padding: 0 12px;
+      border-radius: 6px;
+      height: 32px;
+      box-sizing: border-box;
+      font-weight: 500;
+
+      svg path {
+        stroke: #462D78;
+      }
+    }
+  }
+}

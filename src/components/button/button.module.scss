@@ -1,0 +1,21 @@
+.button {
+  border-radius: 8px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+
+  &.secondary {
+    background: #F2EEF8;
+    color: #462D7A;
+  }
+
+  &.primary {
+    background: #462D7A;
+    color: #FFFFFF;
+  }
+}

@@ -1,0 +1,110 @@
+.widgetWrapper {
+  background: var(--white-background);
+  border-radius: 16px;
+  height: 332px;
+  box-sizing: border-box;
+  overflow: hidden;
+  margin-top: 8px;
+
+  .header {
+    padding: 0 10px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--info-background);
+
+    .left {
+      color: var(--text-info);
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      cursor: pointer;
+      text-decoration: none;
+
+      svg {
+        margin-right: 4px;
+      }
+    }
+
+    .right {
+
+    }
+  }
+
+  .body {
+    padding: 16px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 292px;
+    box-sizing: border-box;
+
+    .loanBalance {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      height: 130px;
+
+      svg {
+        position: absolute;
+      }
+
+      .loanContent {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .loanTitle {
+          font-size: 16px;
+          line-height: 24px;
+          color: var(--text-gray);
+        }
+
+        .loanValue {
+          font-size: 32px;
+          line-height: 39px;
+        }
+      }
+    }
+
+    .counter {
+      height: 50px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+
+      .counterItem {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .title {
+          font-size: 14px;
+          line-height: 21px;
+          color: var(--text-gray);
+        }
+
+        .value {
+          font-size: 24px;
+          line-height: 29px;
+          font-weight: 600px;
+        }
+      }
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+
+      button {
+        width: 100%;
+      }
+    }
+
+  }
+}

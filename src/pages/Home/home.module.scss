@@ -1,0 +1,43 @@
+.homeWrapper {
+  padding: 16px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    width: 100%;
+    padding: 0 4px;
+    box-sizing: border-box;
+
+    .hi {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 32px;
+    }
+
+    .user {
+      height: 40px;
+      width: 40px;
+    }
+  }
+
+  .businessActivity {
+    margin-top: 16px;
+
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: var(--text-black);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .widgets {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+    }
+  }
+}
